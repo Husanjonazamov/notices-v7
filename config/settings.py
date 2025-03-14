@@ -31,7 +31,7 @@ ALLOWED_HOSTS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://elon.aniverse.uz',
+    'https://feruzbek.aniverse.uz',
 ]
 
 
