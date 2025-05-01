@@ -45,7 +45,7 @@ async def is_chat_accessible(chat_id):
 
 async def send_notice(notice, chat_id):
     try:
-        formatted_description = f"**{notice.descriptions}**"
+        formatted_description = f"{notice.descriptions}"
         await client.send_message(chat_id, formatted_description, parse_mode='Markdown')
         last_sents[chat_id] = True
     except Exception as e:
