@@ -4,6 +4,8 @@ services:
   bot:
     build:
       context: .
+      network: host   # <-- qo‘shildi
+
     volumes:
       - .:/code
       - sqlite_data:/code/db
